@@ -182,7 +182,7 @@ const Navbar = () => {
                         >
                             Book Now
                         </Button>
-                        <Button
+                        {/* <Button
                             onClick={() => navigate(`${GLOBAL_PATH}/admin/login`)}
                             size="middle"
                             type="primary"
@@ -190,7 +190,7 @@ const Navbar = () => {
                             className="rounded-xl"
                         >
                             Admin
-                        </Button>
+                        </Button> */}
                     </div>
 
                     {/* Mobile Hamburger */}

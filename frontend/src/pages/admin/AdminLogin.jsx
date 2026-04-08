@@ -52,8 +52,8 @@ const AdminLogin = () => {
                             <Button
                                 onClick={() => navigate(`${GLOBAL_PATH}/`)}
                                 type="primary"
+                                ghost
                                 size="large"
-                                loading={loading}
                                 className="col-span-1 rounded-xl shadow-lg bg-linear-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600"
                             >
                                 Home Page
