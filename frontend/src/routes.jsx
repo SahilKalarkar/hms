@@ -25,22 +25,22 @@ import AdminSettings from "./pages/admin/AdminSettings";
 const routes = (
     <Routes>
         {/* Public Routes */}
-        <Route path={`${GLOBAL_PATH}`} element={<Home />} />
-        <Route path={`${GLOBAL_PATH}about`} element={<About />} />
-        <Route path={`${GLOBAL_PATH}contact`} element={<Contact />} />
-        <Route path={`${GLOBAL_PATH}doctors`} element={<Doctors />} />
-        <Route path={`${GLOBAL_PATH}services/departments`} element={<Departments />} />
-        <Route path={`${GLOBAL_PATH}services/list`} element={<ServicesList />} />
-        <Route path={`${GLOBAL_PATH}services/diagnostics`} element={<Diagnostics />} />
-        <Route path={`${GLOBAL_PATH}services/patientCare`} element={<PatientCare />} />
+        <Route path={`${GLOBAL_PATH}/`} element={<Home />} />
+        <Route path={`${GLOBAL_PATH}/about`} element={<About />} />
+        <Route path={`${GLOBAL_PATH}/contact`} element={<Contact />} />
+        <Route path={`${GLOBAL_PATH}/doctors`} element={<Doctors />} />
+        <Route path={`${GLOBAL_PATH}/services/departments`} element={<Departments />} />
+        <Route path={`${GLOBAL_PATH}/services/list`} element={<ServicesList />} />
+        <Route path={`${GLOBAL_PATH}/services/diagnostics`} element={<Diagnostics />} />
+        <Route path={`${GLOBAL_PATH}/services/patientCare`} element={<PatientCare />} />
         <Route path={`${GLOBAL_PATH}login`} element={<Login />} />
-        <Route path={`${GLOBAL_PATH}register`} element={<Register />} />
+        <Route path={`${GLOBAL_PATH}/register`} element={<Register />} />
 
         {/* Admin Login - No Layout */}
-        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path={`${GLOBAL_PATH}/admin/login`} element={<AdminLogin />} />
 
         {/* Admin Layout - Protected */}
-        <Route path="/admin" element={<AdminLayout />}>
+        <Route path={`${GLOBAL_PATH}/admin`} element={<AdminLayout />}>
             <Route
                 index
                 element={

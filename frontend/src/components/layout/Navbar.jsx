@@ -29,29 +29,29 @@ const Navbar = () => {
     const desktopMenuItems = [
         {
             key: "home",
-            label: <Link to="/">Home</Link>,
+            label: <Link to={`${GLOBAL_PATH}/`}>Home</Link>,
         },
         {
             key: "about",
-            label: <Link to="/about">About</Link>,
+            label: <Link to={`${GLOBAL_PATH}/about`}>About</Link>,
         },
         {
             key: "doctors",
-            label: <Link to="/doctors">Doctors</Link>,
+            label: <Link to={`${GLOBAL_PATH}/doctors`}>Doctors</Link>,
         },
         {
             key: "services",
             label: (
                 <span className="flex items-center gap-1">
                     Services
-                    <ArrowDownOutlined className="text-xs" />  {/* ✅ Desktop arrow */}
+                    <ArrowDownOutlined className="text-xs" />
                 </span>
             ),
             children: [
-                { key: "departments", label: <Link to="/services/departments">Departments</Link> },
-                { key: "services-list", label: <Link to="/services/list">Services</Link> },
-                { key: "diagnostics", label: <Link to="/services/diagnostics">Diagnostics</Link> },
-                { key: "patientCare", label: <Link to="/services/patientCare">Patient Care</Link> },
+                { key: "departments", label: <Link to={`${GLOBAL_PATH}/services/departments`}>Departments</Link> },
+                { key: "services-list", label: <Link to={`${GLOBAL_PATH}/services/list`}>Services</Link> },
+                { key: "diagnostics", label: <Link to={`${GLOBAL_PATH}/services/diagnostics`}>Diagnostics</Link> },
+                { key: "patientCare", label: <Link to={`${GLOBAL_PATH}/services/patientCare`}>Patient Care</Link> },
             ],
         },
     ];
@@ -59,7 +59,7 @@ const Navbar = () => {
     const adminMenu = [
         {
             key: "admin-dashboard",
-            label: <Link to="/admin/dashboard">Admin Dashboard</Link>,
+            label: <Link to={`${GLOBAL_PATH}/admin/dashboard`}>Admin Dashboard</Link>,
             icon: <TeamOutlined />,
         },
     ];
@@ -68,15 +68,15 @@ const Navbar = () => {
     const mobileMenuItems = [
         {
             key: "home",
-            label: <Link to="/">Home</Link>,
+            label: <Link to={`${GLOBAL_PATH}/`}>Home</Link>,
         },
         {
             key: "about",
-            label: <Link to="/about">About</Link>,
+            label: <Link to={`${GLOBAL_PATH}/about`}>About</Link>,
         },
         {
             key: "doctors",
-            label: <Link to="/doctors">Doctors</Link>,
+            label: <Link to={`${GLOBAL_PATH}/doctors`}>Doctors</Link>,
         },
         {
             key: "services",
@@ -86,10 +86,10 @@ const Navbar = () => {
                 </span>
             ),
             children: [
-                { key: "departments", label: <Link to="/services/departments">Departments</Link> },
-                { key: "services-list", label: <Link to="/services/list">Services</Link> },
-                { key: "diagnostics", label: <Link to="/services/diagnostics">Diagnostics</Link> },
-                { key: "patientCare", label: <Link to="/services/patientCare">Patient Care</Link> },
+                { key: "departments", label: <Link to={`${GLOBAL_PATH}/services/departments`}>Departments</Link> },
+                { key: "services-list", label: <Link to={`${GLOBAL_PATH}/services/list`}>Services</Link> },
+                { key: "diagnostics", label: <Link to={`${GLOBAL_PATH}/services/diagnostics`}>Diagnostics</Link> },
+                { key: "patientCare", label: <Link to={`${GLOBAL_PATH}/services/patientCare`}>Patient Care</Link> },
             ],
         },
         {
